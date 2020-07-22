@@ -1,4 +1,5 @@
 @font-face {
+  font-display: swap;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
@@ -7,6 +8,7 @@
 }
 
 @font-face {
+  font-display: swap;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -15,6 +17,7 @@
 }
 
 @font-face {
+  font-display: swap;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
@@ -23,6 +26,7 @@
 }
 
 @font-face {
+  font-display: swap;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -58,21 +62,18 @@
 body{
   margin: 0;  
   background-color: rgb(141, 201, 230);
-  /* background-color: black; */
   font-family: 'Roboto' , 'Arial';
 }
 .header__title{
   padding:30px 40px;
   margin: 0 auto;
   width: 800px;
-  height: 170px;
   background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.63) 0%, rgba(0, 0, 0, 0.63) 100%), url('img/background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .header__sun{
   display: flex;
@@ -83,9 +84,7 @@ body{
   margin-right: 30px;
 }
 .header__sun .header__head{
-  padding: 0;
   color: white;
-  /* font-weight: bold; */
   font-size: 45px;
 }
 .header__sircle{
@@ -103,7 +102,6 @@ body{
   margin-right: 30px;
 }
 .header__suns .header__head{
-  padding: 0;
   font-size: 18px;
   color: #fff;
   text-transform: uppercase;
@@ -122,21 +120,20 @@ body{
 .header__calendar{
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .header__calendar h3{
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
   color: darkgray;
+  margin: 0;
 }
-.header__monday{
+.header__inner .header__monday{
   margin-left: 50px;
 }
 .header__list{
   display: flex;
   align-items: flex-end;
   justify-content: center;
-}
+} 
 .header__clock{
   font-size: 70px;
   color: #fff;
@@ -155,13 +152,9 @@ body{
   display: flex;
   align-items: center;
   overflow: hidden;
-  padding-top: 25px;
+  padding-top: 20px;
   padding-bottom: 25px;
-  position: relative;
 }
-/* .main__cinema{
-  border-bottom: 1px solid darkgray;
-} */
 .main__desktop{
   margin: 0 20px;
 }
@@ -169,11 +162,9 @@ body{
   display: flex;
   align-items: center;
   padding-bottom: 20px;
-
 }
 .main__text h1{
   margin: 0;
-  padding: 0;
   font-size: 30px;
 }
 .main__text p{
@@ -188,11 +179,8 @@ body{
   display: flex;
 }
 .main__color{
-  /* background-color: #000000; */
   margin-bottom: 20px;
-  /* padding: 0; */
   position: relative;
-  /* transform: translate(-50%, -50%); */
 }
 .main__img .main__black{
   width: 160px;
@@ -203,7 +191,6 @@ body{
 .main__simpsons{
   width: 160px;
   height: 90px;
-  padding: 0;
   margin-bottom: 23px;
 }
 .simpsons{
@@ -214,7 +201,6 @@ body{
   z-index: 15;
   transform: translate(-50%, -50%);
   width: 200px;
-  height: 120px;
   box-shadow: 0 0 5px 1px black;
 
 }
@@ -223,7 +209,6 @@ body{
 }
 .main__img p{
   margin: 0 0 0 10px;
-  padding: 0;
   font-size: 15px;
 }
 .main__title{
@@ -251,21 +236,98 @@ body{
   background-color: rgb(141, 201, 230);
   border-radius: 7px;
 }
+.footer__music .footer__grey{
+  margin: 0  40px;
+}
 .footer__peppers{
   display: flex;
   align-items: center;
 }
-.footer__paregraph{
-  
+.footer__paragraph{
+  margin-left: 15px;
 }
-.Shape_7_copy {
-  background-color: rgb(210, 36, 37);
+.footer__paragraph-text{
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+.footer__paragraph-white{
+  color: darkgray;
+  margin: 0;
+  font-size: 12px;
+  line-height: 2;
+}
+.footer__title-music{
+  display: flex;
+  align-items: center;
+}
+.footer__box-black , .footer__box-darkgrey{
+  color: darkgray;
+}
+.footer__box-black::after{
+  display: inline-block;
+  content: "";
+  width: 50px;
+  margin-bottom: 4px;
+  height: 2.5px;
+  background-color: #000000;
+  margin-left: 15px;
+}
+.footer__box-darkgrey::before{
+  display: inline-block;
+  content: "";
+  width: 150px;
+  height: 2.5px;
+  background-color: darkgray;
+  margin-bottom: 4px;
+  margin-right: 15px;
+}
+.footer__box-border{
+  width: 10px;
+  height: 10px;
+  background-color: #000000;
+  border-radius: 50%;
+}
+.footer__images{
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.footer__titles{
+  display: flex;
+}
+.footer__color{
+  margin-bottom: 20px;
+  position: relative;
+}
+.footer__img .footer__black{
+  width: 90px;
+  height: 90px;
+  filter: brightness(50%) ;
+  box-shadow: 0 0 5px 1px black;
+}
+.footer__simpsons{
+  width: 90px;
+  height: 90px;
+  margin-bottom: 23px;
+}
+.footer__simpsonses{
+  filter: brightness(50%) ; 
   position: absolute;
-  left: 367px;
-  top: 65px;
-  width: 138px;
-  height: 30px;
-  z-index: 93;
+  top: 50%;
+  left: 50%;
+  z-index: 15;
+  transform: translate(-50%, -50%);
+  width: 105px;
+  height: 105px;
+  box-shadow: 0 0 5px 1px black;
+}
+.footer__times{
+  color: darkgray;
+}
+.footer__img p{
+  margin: 0 0 0 10px;
+  font-size: 15px;
 }
 
  
