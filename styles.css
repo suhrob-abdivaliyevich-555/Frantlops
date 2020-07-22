@@ -148,4 +148,125 @@ body{
   text-transform: uppercase;
   color: #fff;
 }
+.main__cinema , .footer__music{
+  margin: 0 auto;
+  background-color: #fff;
+  width: 800px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  position: relative;
+}
+/* .main__cinema{
+  border-bottom: 1px solid darkgray;
+} */
+.main__desktop{
+  margin: 0 20px;
+}
+.main__text{
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+
+}
+.main__text h1{
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+}
+.main__text p{
+  margin: 0 0 0 20px;
+  color: darkgray;
+}
+.main__images{
+  display: flex;
+  align-items: center;
+}
+.main__title{
+  display: flex;
+}
+.main__color{
+  /* background-color: #000000; */
+  margin-bottom: 20px;
+  /* padding: 0; */
+  position: relative;
+  /* transform: translate(-50%, -50%); */
+}
+.main__img .main__black{
+  width: 160px;
+  height: 90px;
+  filter: brightness(50%) ;
+  box-shadow: 0 0 5px 1px black;
+}
+.main__simpsons{
+  width: 160px;
+  height: 90px;
+  padding: 0;
+  margin-bottom: 23px;
+}
+.simpsons{
+  filter: brightness(50%) ; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 15;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 120px;
+  box-shadow: 0 0 5px 1px black;
+
+}
+.main__times{
+  color: darkgray;
+}
+.main__img p{
+  margin: 0 0 0 10px;
+  padding: 0;
+  font-size: 15px;
+}
+.main__title{
+  position: relative;
+}
+.main__posits{
+  position: absolute;
+  right: -160px;
+  z-index: 15;
+}
+.article__border{
+  border-top: 1px solid darkgray;
+  position: relative;
+  width: 800px;
+  margin: 0 auto;
+}
+.article__title{
+  position: absolute;
+  width: 100px;
+  z-index: 15;
+  height: 5px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% ,-50%);
+  background-color: rgb(141, 201, 230);
+  border-radius: 7px;
+}
+.footer__peppers{
+  display: flex;
+  align-items: center;
+}
+.footer__paregraph{
+  
+}
+.Shape_7_copy {
+  background-color: rgb(210, 36, 37);
+  position: absolute;
+  left: 367px;
+  top: 65px;
+  width: 138px;
+  height: 30px;
+  z-index: 93;
+}
+
+ 
 
